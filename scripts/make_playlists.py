@@ -83,7 +83,7 @@ def main():
         print(f"  {i:3}. {t['track_name']} — {t['artist_name']} ({t['play_count']} plays)")
 
     # --- Playlist 2: Top 100 DnB songs, all time ---
-    DNB_EXCLUDE = {'Lane 8'}
+    DNB_EXCLUDE = {'Lane 8', 'The Kite String Tangle', 'BCee feat. Rocky Nti', 'BCee'}
     dnb_artists = set()
     for artist_name, genres in genre_cache.items():
         if any('drum and bass' in g.lower() for g in genres):
